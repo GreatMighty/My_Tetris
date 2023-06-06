@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //делаем дизайн кнопок на мейн активити
+    <style name="main_activity_btns">
+        <item name="android:layout_gravity">center</item>
+        <item name="textFillColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">70dp</item>
+    </style>
+    //дизайн счетчика рекорда
+    <style name="main_score">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:textColor">#45C7EF</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100dp</item>
+    </style>
+    //дизайн основного текста мейн активити
+    <style name="main_textTetris">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">85sp</item>
+        <item name="android:textColor">#45C7EF</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100dp</item>
+    </style>
+</resources>

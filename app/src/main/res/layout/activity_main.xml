@@ -1,18 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/layout_margin_top"
+        android:layout_marginBottom="@dimen/layout_margin_bottom"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/main_textTetris"
+            android:text="@string/Main_text_tetris" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_high_score"
+            style="@style/main_score"
+            android:layout_marginTop="@dimen/layout_margin_top"
+            android:text="@string/hight_score"
+            android:textSize="20sp" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/layout_margin_top"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_newGame"
+            style="@style/main_activity_btns"
+            android:text="@string/new_game_btn" />
+
+        <androidx.appcompat.widget.AppCompatButton
+                style="@style/main_activity_btns"
+                android:id="@+id/button_resetScore"
+                android:text="@string/score_reset_btn"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/main_activity_btns"
+                android:id="@+id/button_exit"
+                android:text="@string/exit_btn"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
