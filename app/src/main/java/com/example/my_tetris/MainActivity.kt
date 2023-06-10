@@ -42,3 +42,4 @@ class MainActivity : AppCompatActivity() {
         System.exit(0)
     }
 }
+//114 страница, середина
