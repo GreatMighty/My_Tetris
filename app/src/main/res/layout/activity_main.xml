@@ -33,7 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginTop="@dimen/layout_margin_top"
-            android:layout_weight="1"
+            android:layout_weight=  "1"
             android:orientation="vertical">
 
         <androidx.appcompat.widget.AppCompatButton
@@ -46,7 +46,7 @@
                 android:id="@+id/button_resetScore"
                 android:text="@string/score_reset_btn"/>
 
-            <androidx.appcompat.widget.AppCompatButton
+        <androidx.appcompat.widget.AppCompatButton
                 style="@style/main_activity_btns"
                 android:id="@+id/button_exit"
                 android:text="@string/exit_btn"/>

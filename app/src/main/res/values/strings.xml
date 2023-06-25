@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">My_Tetris</string>
-    <string name="hight_score">Hight score:</string>
-    <string name="Main_text_tetris">TETRIS</string>
-    <string name="new_game_btn">New game</string>
-    <string name="score_reset_btn">Score reset</string>
-    <string name="exit_btn">Exit</string>
+    <string name="app_name">Тетрис</string>
+    <string name="hight_score">Лучший результат: </string>
+    <string name="Main_text_tetris">ТЕТРИС</string>
+    <string name="new_game_btn">Новая игра</string>
+    <string name="score_reset_btn">Сбросить результат</string>
+    <string name="exit_btn">Выход</string>
     <string name="tv_current_score">current score</string>
-    <string name="btn_reset">Restart</string>
+    <string name="btn_reset">Перезагрузка</string>
 </resources>
