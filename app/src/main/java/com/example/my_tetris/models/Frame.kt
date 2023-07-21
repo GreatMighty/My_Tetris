@@ -7,6 +7,7 @@ class Frame (private val width: Int) {
 
     fun addRow (byteStr: String): Frame{
         val row = ByteArray(byteStr.length)
+
         for (index in byteStr.indices){
             row[index] = "${byteStr[index]}".toByte()
         }

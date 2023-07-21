@@ -1,5 +1,5 @@
 package com.example.my_tetris
-
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.MotionEvent
 import android.view.View
@@ -18,6 +18,7 @@ class GameActivity: AppCompatActivity() {
     var appPreferences: AppPreferences? = null
     private val appModel: AppModel = AppModel()
 
+    @SuppressLint("ClickableViewAccessibility")
     public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.game_activity)

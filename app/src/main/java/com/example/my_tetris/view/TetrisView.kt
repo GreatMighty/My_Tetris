@@ -16,7 +16,12 @@ import com.example.my_tetris.constants.FieldConstants
 import com.example.my_tetris.models.AppModel
 import com.example.my_tetris.models.Block
 
-class TetrisView : View {
+
+class TetrisView @JvmOverloads constructor(
+    context: Context,
+    attrs: AttributeSet? = null,
+    defStyleAttr: Int = 0
+) : View(context, attrs, defStyleAttr) {
     private val paint = Paint()
     private var lastMove: Long = 0
     private var model: AppModel? = null
@@ -24,9 +29,6 @@ class TetrisView : View {
     private val viewHandler = ViewHandler(this)
     private var cellSize: Dimension = Dimension(0, 0)
     private var frameOffset: Dimension = Dimension(0, 0)
-
-    constructor(context: Context, attrs: AttributeSet, defStyle: Int):
-            super(context, attrs, defStyle)
 
     companion object {
         private val DELAY = 500

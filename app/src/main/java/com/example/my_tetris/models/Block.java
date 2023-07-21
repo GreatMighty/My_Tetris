@@ -18,7 +18,7 @@ public class Block {
         this.frameNumber = 0;
         this.shapeIndex = shapeIndex;
         this.color = blockColor;
-        this.position = new Point(FieldConstants.COLOMN_COUNT.getValue()/2,0);
+        this.position = new Point(FieldConstants.COLOMN_COUNT.getValue() /2, 0);
     }
 
     public static Block createBlock(){
@@ -28,7 +28,8 @@ public class Block {
                 [random.nextInt(BlockColor.values().length)];
 
         Block block = new Block(shapeIndex, blockColor);
-        block.position.x = block.position.x - Shape.values()[shapeIndex].getStartPosition();
+        block.position.x = block.position.x - Shape.values()
+                [shapeIndex].getStartPosition();
         return block;
     }
 

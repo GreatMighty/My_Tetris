@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
     private fun onBtnResetScoreClick(view: View){
          val preferences = AppPreferences(this)
         preferences.clearHiScore()
-        Snackbar.make(view,"Score successfully reset",
+        Snackbar.make(view,"Результат сброшен",
         Snackbar.LENGTH_SHORT).show()
     }
 
